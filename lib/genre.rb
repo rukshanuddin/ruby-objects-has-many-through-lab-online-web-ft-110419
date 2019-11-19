@@ -5,5 +5,5 @@ class Genre
     @name = genre
     @@all << genre 
   end
-  
+
 end
