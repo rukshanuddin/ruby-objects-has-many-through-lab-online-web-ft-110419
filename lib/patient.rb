@@ -13,7 +13,7 @@ class Patient
     Appointment.new(date, self, doctor)
   end
 
-  def artists
-    songs.map {|song| song.artist }
+  def appointments
+    Appointment.all.select {|appointment| appointment.patient == self}
   end
 end
